@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+#message {
+    font-size:2em;
+    font-weight: bold;
+    padding:10px;
+    background-color:lightpink;
+}

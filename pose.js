@@ -1,6 +1,8 @@
 
 let videoElement = document.getElementById("input_video");
 let prev = "";
+let message = document.getElementById("message")
+let confidenceScore
 
 
 
@@ -16,7 +18,7 @@ function onResults(results) {
     if(classification) brain.classify(inputs, gotResult);
     if(poseLabel){ 
       console.log(poseLabel)
-      // added
+      message.innerHTML = `I think your pose is "${poseLabel}".---Accuracy: ${confidenceScore.toFixed(2)}`
       if(poseLabel != prev){
         prev = poseLabel
         var msg = new SpeechSynthesisUtterance();
@@ -81,5 +83,6 @@ function brainLoaded() {
 function gotResult(error, results) {
     if (results[0].confidence > 0.75) {
         poseLabel = results[0].label
+        confidenceScore = results[0].confidence
     }
 }

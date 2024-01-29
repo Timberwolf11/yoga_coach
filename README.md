@@ -5,21 +5,21 @@ Prerequisites
 
 ### Before running the application, make sure you have the following:
 
-    * A web browser with webcam access.
-    * A stable internet connection.
+* A web browser with webcam access.
+* A stable internet connection.
 
 ## Getting Started
 
-    * Clone the repository to your local machine:
+* Clone the repository to your local machine:
 
    ```
     git clone https://github.com/your-username/yoga-pose-recognition.git
    ```
-    * Open the index.html file in your preferred web browser.
+* Open the index.html file in your preferred web browser.
 
-    * Ensure your webcam is enabled and accessible.
+* Ensure your webcam is enabled and accessible.
 
-    * Strike a yoga pose in front of the webcam, and the application will display the recognized pose and accuracy score.
+* Strike a yoga pose in front of the webcam, and the application will display the recognized pose and accuracy score.
 
 ## Pose Recognition
 
